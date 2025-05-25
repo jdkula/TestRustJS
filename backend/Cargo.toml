@@ -1,0 +1,15 @@
+[package]
+name = "backend"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+axum = "0.8.4"
+axum-extra = { version = "0.10.1", features = ["protobuf"] }
+prost = "0.13"
+tokio = {version = "1.45.1", features = ["full"]}
+tower-http = { version = "0.6.4", features = ["cors"] }
+
+[build-dependencies]
+glob = "0.3.2"
+prost-build = "0.13.5"

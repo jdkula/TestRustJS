@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package api;
+
+message AccumulateRequest {
+  string id = 1;
+  int64 number = 2;
+}
+
+message FinishPipelineRequest {
+  string id = 1;
+}
+
+
+message AccumulateResponse {
+  string id = 1;
+  int64 so_far = 2;
+}
+
+message FinishResponse {
+  string id = 1;
+  int64 sum = 2;
+}
